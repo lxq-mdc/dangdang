@@ -1,0 +1,116 @@
+$wid:1920;
+$hei:1080;
+.head {
+    width: 1800/$wid*100vw;
+    height: 205/$hei*100vh;
+    margin: 0 auto;
+    .head-top {
+        width: 100%;
+        height: 56/$hei*100vh;
+        background-color: rgb(249, 249, 249);
+        display: flex;
+        color: #646464;
+        font-size: 12px;
+        justify-content: space-between;
+        line-height: 56/$hei*100vh;
+        .headNav ul {
+            display: flex;
+            li {
+                &::after {
+                    content: "|";
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+    .head-bottom {
+        width: 100%;
+        height: 148/$hei*100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .head-bottom-left {
+            width: 500/$wid*100vw;
+            height: 100%;
+            // width: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .head-bottom-mid {
+            height: 148/$hei*100vh;
+            display: flex;
+            align-items: center;
+            .search {
+                width: 850/$wid*100vw;
+                height: 65/$hei*100vh;
+                line-height: 148/$hei*100vh;
+                // margin: 30/$hei*100vh;
+                // margin-top: 10/$hei*100vh;
+                border: 2px solid red;
+                display: flex;
+                // align-items: center;
+                justify-content: center;
+                input {
+                    width: 615/$wid*100vw;
+                    height: 60/$hei*100vh;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    color: #646464;
+                    font-size: 14px;
+                    &::placeholder {
+                        color: #646464;
+                    }
+                }
+                select {
+                    display: block;
+                    height: 60/$hei*100vh;
+                    width: 100%;
+                    list-style: none;
+                    background-color: rgb(249, 249, 249);
+                }
+                .SearchOutlined {
+                    .anticon-search {
+                        width: 75/$wid*100vw;
+                        height: 60/$hei*100vh;
+                        display: block;
+                        background-color: red;
+                        font-size: 30px;
+                        line-height: 60/$hei*100vh;
+                        text-align: center;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .head-bottom-right {
+            display: flex;
+            height: 148/$hei*100vh;
+            align-items: center;
+            .bottom-public {
+                width: 170/$wid*100vw;
+                height: 60 /$hei*100vh;
+                text-align: center;
+                line-height: 60 /$hei*100vh;
+                // background-color: aqua;
+                background-color: rgb(249, 249, 249);
+                font-size: 15px;
+                color: white;
+            }
+            .shopCar {
+                @extend .bottom-public;
+                background-color: red;
+                &:hover {
+                    background-color: rgb(249, 249, 249);
+                    color: red;
+                }
+            }
+            .order {
+                @extend .bottom-public;
+                color: #646464;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.pregnant {
+    width: 1800px;
+    height: 635px;
+    margin: 0 auto;
+    background-color: wheat;
+    .pregnant-header {
+        display: flex;
+        font-size: 25px;
+        font-weight: bolder;
+        height: 60px;
+        line-height: 60px;
+        div:nth-child(1)::after {
+            content: "|";
+            margin-left: 30px;
+            color: grey;
+        }
+        @for $i from 2 to 4 {
+            div:nth-child(#{$i})::after {
+                content: "/";
+                margin-left: 30px;
+                color: grey;
+            }
+        }
+        div {
+            margin-right: 30px;
+        }
+        div:hover {
+            color: red;
+        }
+    }
+    .pregnant-content {
+        width: 100%;
+        height: 587px;
+        display: flex;
+        // background-color: red;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .pregnant-content-left {
+            width: 330px;
+            height: 100%;
+            background-color: pink;
+        }
+        .pregnant-content-mid {
+            width: 475px;
+            height: 100%;
+            background-color: aqua;
+        }
+        .pregnant-content-right {
+            width: 993px;
+            height: 100%;
+            background-color: gold;
+            display: flex;
+            flex-wrap: wrap;
+            img {
+                width: 33.333333433333333%;
+                height: 50%;
+            }
+        }
+    }
+}

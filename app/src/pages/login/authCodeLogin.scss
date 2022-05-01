@@ -1,0 +1,42 @@
+.authCodeForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    //background-color: red;
+    height: 100%;
+    margin-top: 30px;
+    input {
+        width: 70%;
+        //height: 80px;
+        margin-top: 25px;
+        border: none;
+        outline-style: none;
+        border-radius: 3px;
+        padding: 30px 15px;
+        background-color: rgb(249,249,249);
+        font-size: 20px;
+        font-weight: 700;
+        font-family: "Microsoft soft";
+        &:focus{
+            border-color: #66afe9;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+        }
+    }
+    p{
+        margin-top: 30px;
+    }
+    button {
+        width: 70%;
+        background-color: red;
+        color: white;
+        border: none;
+        height: 70px;
+        margin-top: 20px;
+        line-height: 70px;
+        font-size: 20px;
+    }
+}
